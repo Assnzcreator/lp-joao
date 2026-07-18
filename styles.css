@@ -178,18 +178,19 @@ a {
 
 .hero-left {
     flex: 1;
-    padding: 80px 40px 80px 10%;
+    padding: 80px 20px;
     background-color: #fcfcfc;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
     z-index: 2;
 }
 
 .hero-content {
-    max-width: 650px;
-    background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(252,252,252,0.85) 100%);
-    padding: 20px 20px 20px 0;
+    max-width: 800px;
+    background: transparent;
+    padding: 20px 0;
 }
 
 .hero-content .pre-headline {
@@ -289,7 +290,8 @@ a {
 
 /* Buttons */
 .cta-button {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     padding: 16px 32px;
     border-radius: 50px;
     font-family: var(--font-heading);
@@ -1143,8 +1145,16 @@ a {
     .hero-content .main-headline { font-size: 2.2rem; }
     .section-title { font-size: 1.8rem; }
     .instructor-profile { flex-direction: column; }
-    .pricing-box { padding: 20px; }
+    .pricing-box { 
+        padding: 30px 15px; 
+        width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    .price-anchor { font-size: 1.15rem; }
     .highlight-price { font-size: 2.8rem; }
+    .price-prefix, .price-suffix { font-size: 0.95rem; white-space: normal; }
+    .btn-checkout { font-size: 0.95rem; padding: 18px 10px; }
     
     .mockup-wrapper {
         margin: 20px 0;
